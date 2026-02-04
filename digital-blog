@@ -1,289 +1,650 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Интернет-маркетолог для бизнеса</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Интернет-маркетолог. SEO, контент, заявки для бизнеса.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      color: #222;
-      line-height: 1.6;
-      background: #fff;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      z-index: 10;
-    }
-
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    nav a {
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #2f80ed, #56ccf2);
-      color: #fff;
-      padding: 90px 0;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #fff;
-      color: #2f80ed;
-      padding: 14px 30px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 70px 0;
-    }
-
-    .gray {
-      background: #f7f9fc;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .subtitle {
-      color: #666;
-      margin-bottom: 30px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    }
-
-    .article {
-      max-width: 800px;
-    }
-
-    .article h3 {
-      margin-top: 30px;
-    }
-
-    .article p {
-      margin: 15px 0;
-    }
-
-    form {
-      max-width: 500px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    textarea {
-      min-height: 120px;
-    }
-
-    button {
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 30px;
-    }
-
-    .fade {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: 0.8s;
-    }
-
-    .fade.visible {
-      opacity: 1;
-      transform: none;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="container">
-    <div class="logo">Маркетолог</div>
-    <nav>
-      <a href="#about">Обо мне</a>
-      <a href="#services">Услуги</a>
-      <a href="#blog">Блог</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container fade">
-    <h1>Интернет-маркетинг<br>с фокусом на прибыль</h1>
-    <p>
-      Помогаю бизнесу и инфо-проектам системно привлекать клиентов
-      через SEO, контент и маркетинговые воронки.
-    </p>
-    <a href="#contact" class="btn">Написать мне</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container fade">
-    <h2>Обо мне</h2>
-    <p class="subtitle">Экспертный подход и измеримый результат</p>
-    <p>
-      Я интернет-маркетолог. Строю маркетинговые системы,
-      которые приносят заявки, а не просто трафик и отчёты.
-    </p>
-  </div>
-</section>
-
-<section id="services" class="gray">
-  <div class="container fade">
-    <h2>Услуги</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>SEO и контент</h3>
-        <p>Поисковый трафик как стабильный источник клиентов</p>
-      </div>
-      <div class="card">
-        <h3>Маркетинговая система</h3>
-        <p>От упаковки до воронки продаж</p>
-      </div>
-      <div class="card">
-        <h3>Стратегия</h3>
-        <p>Чёткий план роста без хаоса</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="blog">
-  <div class="container fade article">
-    <h2>Блог</h2>
-    <p class="subtitle">Полезные статьи для бизнеса</p>
-
-    <h3>Как бизнесу получать заявки из SEO</h3>
-    <p>
-      SEO — это не про позиции, а про стабильный поток клиентов.
-      Рабочая модель — блог + коммерческие страницы + воронка.
-    </p>
-    <p><strong>Вывод:</strong> SEO работает, когда встроено в систему.</p>
-  </div>
-</section>
-
-<section id="contact" class="gray">
-  <div class="container fade">
-    <h2>Связаться со мной</h2>
-    <form>
-      <input type="text" placeholder="Имя" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Сообщение" required></textarea>
-      <button class="btn" type="submit">Отправить</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  © 2026. Интернет-маркетолог
-</footer>
-
-<script>
-  document.querySelectorAll('.fade').forEach(el => {
-    setTimeout(() => el.classList.add('visible'), 200);
-  });
-</script>
-
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/digital-blog b/digital-blog
+index 5a11ef10803fa21d33d410f67908c1ecf3346f47..1d042405095a32889cf1fa359a19851b715a5f19 100644
+--- a/digital-blog
++++ b/digital-blog
+@@ -1,289 +1,482 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+ <head>
+   <meta charset="UTF-8">
+-  <title>Интернет-маркетолог для бизнеса</title>
++  <title>Маркетолог — сайт-визитка</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <meta name="description" content="Интернет-маркетолог. SEO, контент, заявки для бизнеса.">
+-
++  <meta name="description" content="Сайт-визитка маркетолога: услуги, кейсы, контакты.">
++  <link rel="preconnect" href="https://fonts.googleapis.com">
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <style>
++    :root {
++      --primary: #2f6cb2;
++      --primary-dark: #22518b;
++      --accent: #3ea3ff;
++      --text: #1e2a3a;
++      --muted: #6a7a90;
++      --bg: #f5f7fb;
++      --card: #ffffff;
++      --shadow: 0 16px 30px rgba(30, 42, 58, 0.12);
++    }
++
+     * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+-      font-family: Arial, sans-serif;
++      font-family: "Inter", "Arial", sans-serif;
+     }
+ 
+     body {
+-      color: #222;
++      color: var(--text);
++      background: #ffffff;
+       line-height: 1.6;
+-      background: #fff;
++    }
++
++    img {
++      max-width: 100%;
++      display: block;
+     }
+ 
+     a {
+       text-decoration: none;
+       color: inherit;
+     }
+ 
+     .container {
+-      max-width: 1100px;
+-      margin: auto;
++      max-width: 1120px;
++      margin: 0 auto;
+       padding: 0 20px;
+     }
+ 
+     header {
+       position: sticky;
+       top: 0;
+-      background: #fff;
+-      border-bottom: 1px solid #eee;
+       z-index: 10;
++      background: #ffffff;
++      border-bottom: 1px solid #e6ebf3;
+     }
+ 
+     header .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+-      padding: 15px 0;
++      padding: 16px 0;
+     }
+ 
+     .logo {
+-      font-weight: bold;
++      font-weight: 700;
+       font-size: 20px;
++      color: var(--primary-dark);
+     }
+ 
+     nav a {
+-      margin-left: 20px;
++      margin-left: 24px;
+       font-weight: 500;
++      color: var(--muted);
++      position: relative;
++    }
++
++    nav a.active::after,
++    nav a:hover::after {
++      content: "";
++      position: absolute;
++      left: 0;
++      bottom: -8px;
++      width: 100%;
++      height: 3px;
++      background: var(--accent);
++      border-radius: 999px;
+     }
+ 
+     .hero {
+-      background: linear-gradient(120deg, #2f80ed, #56ccf2);
+-      color: #fff;
+-      padding: 90px 0;
++      background: linear-gradient(120deg, #2d66b1 0%, #67a4e0 45%, #dce6f2 100%);
++      color: #ffffff;
++      padding: 70px 0;
++    }
++
++    .hero .container {
++      display: grid;
++      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
++      gap: 40px;
++      align-items: center;
+     }
+ 
+     .hero h1 {
+       font-size: 42px;
+-      margin-bottom: 20px;
++      margin-bottom: 18px;
++    }
++
++    .hero h1 span {
++      color: #b6d7ff;
+     }
+ 
+     .hero p {
+       font-size: 18px;
+-      max-width: 600px;
+-      margin-bottom: 30px;
++      max-width: 460px;
++      margin-bottom: 24px;
++      color: #e8f2ff;
+     }
+ 
+     .btn {
+-      display: inline-block;
+-      background: #fff;
+-      color: #2f80ed;
++      display: inline-flex;
++      align-items: center;
++      justify-content: center;
+       padding: 14px 30px;
+       border-radius: 8px;
+-      font-weight: bold;
+-      transition: 0.3s;
++      font-weight: 600;
++      background: #2f7eea;
++      color: #ffffff;
++      border: none;
++      box-shadow: 0 12px 24px rgba(15, 68, 146, 0.25);
++      transition: 0.3s ease;
+     }
+ 
+     .btn:hover {
+-      transform: scale(1.05);
+-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
++      transform: translateY(-2px);
++      box-shadow: 0 16px 32px rgba(15, 68, 146, 0.3);
+     }
+ 
+-    section {
+-      padding: 70px 0;
++    .hero-card {
++      background: rgba(255, 255, 255, 0.18);
++      border-radius: 24px;
++      padding: 24px;
++      backdrop-filter: blur(6px);
++      display: flex;
++      justify-content: center;
++      align-items: center;
+     }
+ 
+-    .gray {
+-      background: #f7f9fc;
++    .hero-card img {
++      border-radius: 20px;
++      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+     }
+ 
+-    h2 {
++    section {
++      padding: 70px 0;
++    }
++
++    .section-title {
+       font-size: 32px;
+-      margin-bottom: 15px;
++      margin-bottom: 10px;
+     }
+ 
+     .subtitle {
+-      color: #666;
+-      margin-bottom: 30px;
++      color: var(--muted);
++      margin-bottom: 28px;
++    }
++
++    .split {
++      display: grid;
++      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
++      gap: 32px;
++      align-items: center;
++    }
++
++    .info-list {
++      list-style: none;
++      display: grid;
++      gap: 14px;
++      margin: 20px 0;
++    }
++
++    .info-list li {
++      display: flex;
++      gap: 12px;
++      align-items: flex-start;
++      font-weight: 500;
++    }
++
++    .info-list span {
++      color: #2f7eea;
++      font-size: 18px;
++      line-height: 1;
++    }
++
++    .about-card {
++      background: var(--card);
++      border-radius: 20px;
++      box-shadow: var(--shadow);
++      padding: 20px;
++    }
++
++    .tags {
++      display: grid;
++      gap: 12px;
++      margin-top: 16px;
++    }
++
++    .tag {
++      display: flex;
++      align-items: center;
++      gap: 12px;
++      padding: 10px 14px;
++      border-radius: 12px;
++      background: #f0f5fb;
++      font-weight: 600;
++      color: var(--primary-dark);
++    }
++
++    .services {
++      background: var(--bg);
+     }
+ 
+     .cards {
+       display: grid;
+-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
++      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+       gap: 20px;
+     }
+ 
+     .card {
+-      background: #fff;
+-      padding: 25px;
+-      border-radius: 12px;
+-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+-      transition: 0.3s;
++      background: var(--card);
++      padding: 24px 18px;
++      border-radius: 16px;
++      box-shadow: var(--shadow);
++      text-align: center;
++    }
++
++    .card .icon {
++      width: 60px;
++      height: 60px;
++      margin: 0 auto 16px;
++      border-radius: 16px;
++      background: #eef4ff;
++      display: grid;
++      place-items: center;
++      font-size: 28px;
++      color: var(--primary);
++    }
++
++    .cases {
++      background: #f7f9fc;
++    }
++
++    .case-card {
++      background: var(--card);
++      border-radius: 16px;
++      overflow: hidden;
++      box-shadow: var(--shadow);
+     }
+ 
+-    .card:hover {
+-      transform: translateY(-8px);
+-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
++    .case-card img {
++      height: 180px;
++      object-fit: cover;
++      width: 100%;
+     }
+ 
+-    .article {
+-      max-width: 800px;
++    .case-card p {
++      padding: 14px 16px;
++      font-weight: 600;
++      color: var(--primary-dark);
+     }
+ 
+-    .article h3 {
+-      margin-top: 30px;
++    .contact {
++      background: var(--bg);
+     }
+ 
+-    .article p {
+-      margin: 15px 0;
++    .contact-grid {
++      display: grid;
++      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
++      gap: 24px;
+     }
+ 
+     form {
+-      max-width: 500px;
++      background: var(--card);
++      padding: 24px;
++      border-radius: 16px;
++      box-shadow: var(--shadow);
+     }
+ 
+     input, textarea {
+       width: 100%;
+-      padding: 14px;
+-      margin-bottom: 15px;
+-      border-radius: 8px;
+-      border: 1px solid #ccc;
++      padding: 12px 14px;
++      margin-bottom: 14px;
++      border-radius: 10px;
++      border: 1px solid #d7deea;
++      font-size: 15px;
+     }
+ 
+     textarea {
+       min-height: 120px;
++      resize: vertical;
+     }
+ 
+-    button {
+-      border: none;
+-      cursor: pointer;
++    .contact-card {
++      background: var(--card);
++      border-radius: 16px;
++      padding: 24px;
++      box-shadow: var(--shadow);
++      display: grid;
++      gap: 12px;
+     }
+ 
+-    footer {
+-      background: #222;
+-      color: #fff;
+-      text-align: center;
+-      padding: 30px;
++    .contact-item {
++      display: flex;
++      gap: 12px;
++      align-items: center;
++      font-weight: 500;
++      color: var(--primary-dark);
+     }
+ 
+-    .fade {
+-      opacity: 0;
+-      transform: translateY(20px);
+-      transition: 0.8s;
++    .contact-item span {
++      width: 34px;
++      height: 34px;
++      border-radius: 10px;
++      background: #eaf2ff;
++      display: grid;
++      place-items: center;
++      color: var(--primary);
++      font-size: 16px;
+     }
+ 
+-    .fade.visible {
+-      opacity: 1;
+-      transform: none;
++    footer {
++      text-align: center;
++      padding: 20px;
++      color: var(--muted);
++      background: #ffffff;
++      border-top: 1px solid #e6ebf3;
+     }
+ 
+     @media (max-width: 768px) {
+-      .hero h1 {
+-        font-size: 32px;
++      .hero {
++        text-align: center;
+       }
+ 
+       nav {
+         display: none;
+       }
+ 
++      .hero h1 {
++        font-size: 32px;
++      }
++
+       .btn {
+         width: 100%;
+-        text-align: center;
+       }
+     }
+   </style>
+ </head>
+-
+ <body>
+-
+-<header>
+-  <div class="container">
+-    <div class="logo">Маркетолог</div>
+-    <nav>
+-      <a href="#about">Обо мне</a>
+-      <a href="#services">Услуги</a>
+-      <a href="#blog">Блог</a>
+-      <a href="#contact">Контакты</a>
+-    </nav>
+-  </div>
+-</header>
+-
+-<section class="hero">
+-  <div class="container fade">
+-    <h1>Интернет-маркетинг<br>с фокусом на прибыль</h1>
+-    <p>
+-      Помогаю бизнесу и инфо-проектам системно привлекать клиентов
+-      через SEO, контент и маркетинговые воронки.
+-    </p>
+-    <a href="#contact" class="btn">Написать мне</a>
+-  </div>
+-</section>
+-
+-<section id="about">
+-  <div class="container fade">
+-    <h2>Обо мне</h2>
+-    <p class="subtitle">Экспертный подход и измеримый результат</p>
+-    <p>
+-      Я интернет-маркетолог. Строю маркетинговые системы,
+-      которые приносят заявки, а не просто трафик и отчёты.
+-    </p>
+-  </div>
+-</section>
+-
+-<section id="services" class="gray">
+-  <div class="container fade">
+-    <h2>Услуги</h2>
+-    <div class="cards">
+-      <div class="card">
+-        <h3>SEO и контент</h3>
+-        <p>Поисковый трафик как стабильный источник клиентов</p>
++  <header>
++    <div class="container">
++      <div class="logo">Маркетолог</div>
++      <nav>
++        <a href="#about" class="active">Обо мне</a>
++        <a href="#services">Услуги</a>
++        <a href="#cases">Кейсы</a>
++        <a href="#contact">Контакты</a>
++      </nav>
++    </div>
++  </header>
++
++  <section class="hero">
++    <div class="container">
++      <div>
++        <h1>Привет!<br>Я — <span>Маркетолог</span></h1>
++        <p>Помогаю вашему бизнесу расти и увеличивать прибыль через системный маркетинг.</p>
++        <a href="#contact" class="btn">Связаться со мной</a>
++      </div>
++      <div class="hero-card">
++        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=480&q=80" alt="Маркетолог">
++      </div>
++    </div>
++  </section>
++
++  <section id="about">
++    <div class="container split">
++      <div>
++        <h2 class="section-title">Обо мне</h2>
++        <p class="subtitle">Кто я и чем занимаюсь</p>
++        <ul class="info-list">
++          <li><span>✓</span> Более 5 лет в digital-маркетинге</li>
++          <li><span>✓</span> Более 100 успешных проектов</li>
++          <li><span>✓</span> Эксперт в SEO, SMM и рекламе</li>
++        </ul>
++        <p>Помогаю бизнесу увеличивать поток заявок, улучшать узнаваемость бренда и системно выстраивать маркетинг.</p>
+       </div>
+-      <div class="card">
+-        <h3>Маркетинговая система</h3>
+-        <p>От упаковки до воронки продаж</p>
++      <div class="about-card">
++        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="Рабочий процесс">
++        <div class="tags">
++          <div class="tag">📈 SEO</div>
++          <div class="tag">💬 SMM</div>
++          <div class="tag">🚀 Реклама</div>
++        </div>
+       </div>
+-      <div class="card">
+-        <h3>Стратегия</h3>
+-        <p>Чёткий план роста без хаоса</p>
++    </div>
++  </section>
++
++  <section id="services" class="services">
++    <div class="container">
++      <h2 class="section-title">Мои услуги</h2>
++      <p class="subtitle">Чем я могу вам помочь</p>
++      <div class="cards">
++        <div class="card">
++          <div class="icon">🔍</div>
++          <h3>SEO-продвижение</h3>
++          <p>Оптимизация и рост позиций сайта.</p>
++        </div>
++        <div class="card">
++          <div class="icon">🎯</div>
++          <h3>Таргетированная реклама</h3>
++          <p>Привлечение клиентов из соцсетей.</p>
++        </div>
++        <div class="card">
++          <div class="icon">💙</div>
++          <h3>SMM</h3>
++          <p>Ведение и продвижение аккаунтов.</p>
++        </div>
++        <div class="card">
++          <div class="icon">📝</div>
++          <h3>Контент-маркетинг</h3>
++          <p>Создание контента и стратегии.</p>
++        </div>
++      </div>
++    </div>
++  </section>
++
++  <section id="cases" class="cases">
++    <div class="container">
++      <h2 class="section-title">Кейсы</h2>
++      <p class="subtitle">Мои успешные проекты</p>
++      <div class="cards">
++        <div class="case-card">
++          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Рост трафика">
++          <p>Рост трафика на 300%</p>
++        </div>
++        <div class="case-card">
++          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Увеличение продаж">
++          <p>Увеличение продаж в 2 раза</p>
++        </div>
++        <div class="case-card">
++          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="Продвижение бренда">
++          <p>Продвижение бренда</p>
++        </div>
++      </div>
++    </div>
++  </section>
++
++  <section id="contact" class="contact">
++    <div class="container">
++      <h2 class="section-title">Связаться со мной</h2>
++      <p class="subtitle">Напишите мне, чтобы обсудить ваш проект</p>
++      <div class="contact-grid">
++        <form>
++          <input type="text" placeholder="Ваше имя" required>
++          <input type="email" placeholder="E-mail" required>
++          <textarea placeholder="Сообщение" required></textarea>
++          <button class="btn" type="submit">Отправить</button>
++        </form>
++        <div class="contact-card">
++          <div class="contact-item"><span>✉️</span> info@email.com</div>
++          <div class="contact-item"><span>📞</span> +7 999 123 4567</div>
++          <div class="contact-item"><span>💬</span> Telegram: @username</div>
++        </div>
+       </div>
+     </div>
+-  </div>
+-</section>
+-
+-<section id="blog">
+-  <div class="container fade article">
+-    <h2>Блог</h2>
+-    <p class="subtitle">Полезные статьи для бизнеса</p>
+-
+-    <h3>Как бизнесу получать заявки из SEO</h3>
+-    <p>
+-      SEO — это не про позиции, а про стабильный поток клиентов.
+-      Рабочая модель — блог + коммерческие страницы + воронка.
+-    </p>
+-    <p><strong>Вывод:</strong> SEO работает, когда встроено в систему.</p>
+-  </div>
+-</section>
+-
+-<section id="contact" class="gray">
+-  <div class="container fade">
+-    <h2>Связаться со мной</h2>
+-    <form>
+-      <input type="text" placeholder="Имя" required>
+-      <input type="email" placeholder="Email" required>
+-      <textarea placeholder="Сообщение" required></textarea>
+-      <button class="btn" type="submit">Отправить</button>
+-    </form>
+-  </div>
+-</section>
+-
+-<footer>
+-  © 2026. Интернет-маркетолог
+-</footer>
+-
+-<script>
+-  document.querySelectorAll('.fade').forEach(el => {
+-    setTimeout(() => el.classList.add('visible'), 200);
+-  });
+-</script>
++  </section>
+ 
++  <footer>
++    © 2026. Все права защищены
++  </footer>
+ </body>
+ </html>
+ 
+EOF
+)
